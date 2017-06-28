@@ -2,6 +2,7 @@
 
 ## System user running sinopia
 default['sinopia']['user'] = 'sinopia'
+default['sinopia']['group'] = node['sinopia']['user']
 
 ## sinopia gem version (use nil for latest)
 default['sinopia']['version'] = nil

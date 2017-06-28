@@ -6,8 +6,8 @@ Description=Sinopia NPM cache & private repo server
 [Service]
 ExecStart=/usr/bin/sinopia -c <%= File.join(node['sinopia']['confdir'], 'config.yaml') %>
 Type=simple
-User=sinopia
-Group=sinopia
+User=<%= node['sinopia']['user'] %>
+Group=<%= node['sinopia']['group'] %>
 
 [Install]
 WantedBy=multi-user.target

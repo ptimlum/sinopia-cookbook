@@ -33,7 +33,7 @@ DIR=/var/run/sinopia
 PID=/var/run/sinopia/sinopia_server.pid
 LOCK=/var/lock/subsys/$NAME
 USER=<%= node['sinopia']['user'] %>
-GROUP=<%= node['sinopia']['user'] %>
+GROUP=<%= node['sinopia']['group'] %>
 
 # Exit if the package is not installed
 if [ ! -x "$DAEMON" ]; then

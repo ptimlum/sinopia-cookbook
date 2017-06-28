@@ -17,12 +17,12 @@ end
 
 directory node['sinopia']['logdir'] do
   owner node['sinopia']['user']
-  group node['sinopia']['user']
+  group node['sinopia']['group']
 end
 
 directory node['sinopia']['datadir'] do
   owner node['sinopia']['user']
-  group node['sinopia']['user']
+  group node['sinopia']['group']
 end
 
 admin_add_list = []
