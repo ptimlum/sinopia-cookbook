@@ -42,6 +42,12 @@ default['sinopia']['repos'] = {
   # 'myrepo' => 'https://myrepo.local/'
 }
 
+# broken crypt3 work around: https://github.com/rlidwka/sinopia/issues/311
+# --no-optional
+# --no-shrinkwrap
+default['sinopia']['npm_options'] = [
+]
+
 default['sinopia']['mainrepo'] = 'npmjs'
 
 default['sinopia']['timeout'] = nil # 30000 ms

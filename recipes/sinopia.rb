@@ -8,6 +8,7 @@ require 'digest'
 
 nodejs_npm 'sinopia' do
   version node['sinopia']['version']
+  options node['sinopia']['npm_options'] unless ( node['sinopia']['npm_options'].nil? || node['sinopia']['npm_options'].empty? )
   action :install
 end
 
